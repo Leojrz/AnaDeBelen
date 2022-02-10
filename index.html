@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="style.css">
     <!--Glider-->
     <link rel="stylesheet" href="css/glider.min.css">
+    <!--ScrollReveal-->
+    <script src="js/scrollreveal.js"></script>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!--AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <!--NAVBAR************************************************************************************-->
-    <nav id="nav-bar">
-        <div class="logo" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+    <nav id="nav-bar" class="nav">
+        <div class="logo" class="animate__animated animate__pulse">
             <img src="imagenes/logoana.png" alt="Logo Ana De Belén">
         </div>
         <ul class="nav-links">
@@ -45,9 +45,7 @@
         <div id="portada">
             <div class="fondo">
                 <div class="cont-fondo">
-                <div class="title" data-aos="zoom-in-up"
-                data-aos-delay="300"
-                data-aos-duration="1500">  
+                <div class="title">  
                    <h1>Ana De Belén - Peluquería y estética</h1>
                    <blockquote>Trabajamos para resaltar tu belleza</blockquote>
                       <div class="btn">
@@ -59,8 +57,7 @@
         </div>
     <!--ICONOS INFORMACIÓN*********************************************************-->
     <section class="info">
-            <div class="info-column" data-aos="fade-down"
-            data-aos-duration="1500">
+            <div class="info-column">
                 <div class="cont-info">
                      <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/000000/external-credit-card-online-shopping-vitaliy-gorbachev-blue-vitaly-gorbachev-1.png"/>
                      <h4><strong>Comprá y Reservá</strong> online</h4>
@@ -84,24 +81,24 @@
     </section>
 
         <!--PROMOCIONES***************************************************************-->
-        <h2 class="title-service" id="promocion" data-aos="zoom-out-down" data-aos-duration="1000">Promociones</h2>
+        <h2 class="title-service" id="promocion">Promociones</h2>
         <!--Linea Divisoria*****-->
         <div class="line"></div>
 
     <section id="promociones">
-            <div class="promo-img" data-aos="fade-up" data-aos-duration="1500">
+            <div class="promo-img">
                <img src="imagenes/Promo Gentlemen.png" alt="Promo Gentlemen">
                <img src="imagenes/promo renovada (1).png" alt="Promo Renovada">
             </div>
     </section>
 
         <!--SERVICIOS*****************************************************************-->
-        <h2 class="title-service" data-aos="zoom-out-up" data-aos-duration="1000">Nuestros Servicios</h2>
+        <h2 class="title-service">Nuestros Servicios</h2>
         <!--Linea divisoria*****-->
         <div class="line2"></div>
 
     <section id="servicios">
-            <div class="container-servicio" data-aos="zoom-out-up" data-aos-duration="1000">
+            <div class="container-servicio">
                 <div class="card">
                     <div class="imgBx">
                         <img src="imagenes/servicios/cortevaron.jpg" alt="Corte masculino">
@@ -276,7 +273,7 @@
 
       <!--Por qué elegirnos?**********************************-->
     <section id="about-us">
-        <div class="bck-container2" data-aos="zoom-out-left" data-aos-duration="1500">
+        <div class="bck-container2">
             <div class="bck-about2"></div>
             <div class="info-about2">
                <h2>EL CAMBIO QUE ESTÁS BUSCANDO.</h2>
@@ -291,7 +288,7 @@
         <!--Slider****************-->
         <section class="p-slider">
            <!--heading*********-->
-           <h3 class="title-service" data-aos="zoom-out-up" data-aos-duration="1000">Nuestros Productos</h3>
+           <h3 class="title-service">Nuestros Productos</h3>
            <!--Btns------------->
            <div class="slider-btns">
                 <button aria-label="Previous" class="glider-prev">
@@ -1269,7 +1266,7 @@
     <!--Ubicacion***************************************************************-->
     <section id="location">
         <div class="info-about3">
-               <h2 data-aos="zoom-out-up" data-aos-duration="1000">Dónde estamos?</h2>
+               <h2>Dónde estamos?</h2>
                <div class="line2" data-aos="zoom-out-up" data-aos-duration="1000"></div>
                <ul>
                    <li><i class="fas fa-map-marker-alt"></i>BºScalabrini Ortiz.Mar Tirreno 805 -Salta</li>
@@ -1279,7 +1276,7 @@
                    <li><i class="fas fa-phone"></i><a href="tel:+5493875342612">+54 9 387 534-2612</a></li>
                </ul>
             </div>
-        <div class="map-responsive" data-aos="zoom-out" data-aos-duration="2000">
+        <div class="map-responsive">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.080743199305!2d-65.42054908535103!3d-24.826912215423103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc322e3a52857%3A0x5bf0d9316b0aa8d9!2sMar%20Tirreno%20805%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1644182736816!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
                   
@@ -1341,12 +1338,8 @@
     </footer>
    <script src="js/main.js"></script>
 <!--Scripts*************************************************************************************************-->
-<!--AOS-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    AOS.init();
-  </script>
+<!--ScrollReveal-->
+<script src="js/index.js"></script>
 <!--Glider js*******-->
    <script src="js/glider.min.js"></script>
 
