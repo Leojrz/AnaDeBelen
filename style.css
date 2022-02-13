@@ -15,6 +15,20 @@
 body{
     font-family: 'Noto Serif', serif;
 }
+/*Scrollbar***************/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: var(--darkgold);
+    border: 1px solid #000;
+}
 /*NAVIGATION*****************************************************************/
 #nav-bar{
     background-color: #1d2122f1;
@@ -423,7 +437,7 @@ body{
 }
 .p-img{
     width: 100%;
-    height: 250px;
+    height: 25   0px;
     display: flex;
 }
 .p-img a img{
